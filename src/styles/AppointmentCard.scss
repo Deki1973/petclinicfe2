@@ -1,0 +1,45 @@
+.div-appointment-card{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    form{
+       
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+        border-radius: 5px;
+        padding: 1rem;
+    }
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    button{
+        background-color: darkcyan;
+        color: white;
+        margin-bottom: 0.25rem;
+    }
+
+    
+}
+
+table{
+    background-color:white;
+  border: none;
+    tr{
+        td{
+            
+  
+            
+            p{
+                margin: 0;    
+                
+                
+            }
+        }
+    }
+}

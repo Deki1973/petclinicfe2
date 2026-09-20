@@ -1,0 +1,36 @@
+.page-pet-delete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h2-pet-delete{
+    background-color:red;
+    color:white;
+    padding: 5px;
+}
+.ul-pet-delete{
+    padding: 30px;
+    background-color: aqua;
+    li{
+        text-align: left;
+    }
+    font-size: large;
+    font-weight: 800;
+    background-color: white;
+}
+.form-pet-delete{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+   
+}
+#btn-submit{
+    background-color: red;
+    color:white;
+}
+#btn-cancel{
+   background-color: aliceblue;
+   color: black;
+}
+

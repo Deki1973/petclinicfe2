@@ -1,0 +1,51 @@
+.form-appointments {
+
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+}
+
+.form-div-1 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    button,
+    select {
+        margin-inline: 2px;
+        height: 3rem;
+    }
+
+    input {
+
+        height: 2rem;
+    }
+
+}
+
+.form-lower-div {
+    background-color: yellow;
+}
+
+.form-option-buttons {
+    background-color: purple;
+}
+
+.options-filter-by-completed {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
+    input {
+        gap: 5px;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}

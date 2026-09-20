@@ -1,0 +1,98 @@
+.navBar{
+    
+    //background-color: bisque;
+    width: 100%;
+    
+}
+.navBarLinks{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+   
+
+    
+
+
+    
+}
+.div-sign-controls{
+    padding: 1rem;
+
+    
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 2rem;
+        
+        
+    }
+    div{
+        display: flex;
+        height: 2rem;
+        align-items: center;
+        gap: 5px;
+        
+    }
+}
+.p-jwt{
+    background-color: yellow;
+    display: none;
+}
+.button-link{
+    background-color: rgb(190, 188, 188);
+    
+}
+.button-link:active{
+    background-color: white;
+}
+
+.button-sign-out{
+    background-color:greenyellow;
+}
+.button-sign-in{
+    background-color: lightgray;
+}
+.navbar-logged-in-message{
+    background-color: green;color: white;
+}
+.navbar-logged-out-message{
+    background-color: red;color: white;
+}
+
+
+.active{
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 6rem;
+    
+    
+}
+.inactive{
+    background-color: white;
+    color:purple;
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 6rem;
+    
+}
+.sign-in-form{
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    input{
+        border-radius: 5px;
+    }
+    padding: 0.25rem;
+}

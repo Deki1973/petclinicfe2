@@ -1,0 +1,42 @@
+.page-owner{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.select1{
+    color: gray;
+    width: 10rem;
+    height: 3rem;
+    font-weight: 800;
+    border-radius: 5px;
+    cursor: pointer;
+    option{
+        font-weight: 800;
+    }
+    
+}
+.ownerAttributeValue{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 5px;
+    cursor:text;
+    font-size: medium;
+    font-weight: 700;
+    padding: 5px;
+    
+}
+.ownerForm{
+    display: flex;
+    align-items:center;
+    gap: 5px;
+    button{
+        height: 3rem;
+        border-color: gray;
+        
+        
+    }
+    
+    
+    font-size: medium;
+}

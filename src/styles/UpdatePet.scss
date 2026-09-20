@@ -1,0 +1,36 @@
+.page-update-pet {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side {
+    text-align: right;
+    color: gray
+}
+
+.right-side {
+    text-align: left;
+    font-weight: 700;
+}
+
+.form-update-pet {
+    background-color: wheat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-update-pet {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+}
+.message{
+    background-color: blue;color:white;
+}

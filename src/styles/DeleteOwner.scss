@@ -1,0 +1,29 @@
+.delete-owner-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.h2-delete-owner{
+    background-color: red;
+    color: white;
+    padding: 5px;
+}
+.delete-owner-ul{
+    padding: 30px;
+    background-color: aqua;
+    li{
+        text-align: left;
+    }
+    font-size: large;
+    font-weight: 800;
+    background-color: white;
+}
+.delete-owner-form{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    button{
+        background-color: red;
+        color: white;
+    }
+}

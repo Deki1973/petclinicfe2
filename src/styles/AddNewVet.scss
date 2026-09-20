@@ -1,0 +1,16 @@
+.page-add-new-vet{
+    display: flex;flex-direction: column; align-items: center;
+}
+.buttons-form{
+display: flex;
+flex-direction: row;
+align-items: center;
+gap:5px;
+justify-content: center;
+
+}
+.message{
+    background-color: blue;
+    color:white;
+    padding: 5px;
+}

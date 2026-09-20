@@ -1,0 +1,56 @@
+.page-update-appointment{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    form{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        textarea{
+           
+            width: 50%;
+            height: 7rem;
+            color:black;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.75rem;
+        }
+        
+    }
+    label{
+        font-weight: 700;
+        color: gray;
+    }
+    
+   
+}
+.div-completed-price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    
+       
+    
+}
+.div-form-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.label-completed{
+    display: flex;
+    input{
+        width: 2rem;
+        height: 2rem;
+    }
+    align-items: center;
+
+}
+
+.message{
+    background-color: blue;color: white;
+}

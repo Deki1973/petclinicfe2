@@ -1,0 +1,63 @@
+.ownerDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+    
+}
+
+
+.ownerDetailsButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 5px;
+    button{
+        height: 3rem;
+        border-color: gray;
+    }
+    
+    
+}
+
+.leftSide{
+    text-align: right;
+    color: gray;
+    
+}
+.rightSide{
+    text-align: left;
+    font-weight: 800;
+}
+table{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+    
+}
+thead{
+    background-color: #d8dfdb;
+    
+}
+th{
+    background-color: darkcyan;
+    color: white; 
+    padding: 0.75rem;
+}
+
+
+td{
+    height: 1rem;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #d8dfdb;
+}
+tr:nth-child(odd){
+    background-color: rgba(238, 233, 233, 0.856);
+}
