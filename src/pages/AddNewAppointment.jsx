@@ -128,15 +128,11 @@ const AddNewAppointment = () => {
             setOwnerId(response.data.owner)
             setMessage("Pet ID: "+petId+". Owner ID: "+response.data.owner+".")
             window.alert("The Owner ID: "+response.data.owner)
-            //
+          
             
 
 
-            
-            //console.log("location.state.ownerDetails.id: ")
-            
-            // ovde baca gresku
-            //console.log(location.state.ownerDetails.id)
+          
            
 
             try{
@@ -189,7 +185,7 @@ const AddNewAppointment = () => {
     const getPets = async () => {
         
         try{
-            const urlPets = `${urlLocal}/clinic/pet/search?owner=${data.ownerDetails.id}`
+            const urlPets = `${urlLocal}/clinic/pet/search/?owner=${data.ownerDetails.id}`
         
         const response = await axios.get(urlPets, {
             headers: {

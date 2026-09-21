@@ -74,23 +74,24 @@ const Owner = () => {
 
             var url = "";
 
-            //url=`${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
             
             
-            if (ownerAttribute === "id") {
-                
-                url = `${urlLocal}/clinic/owner/?id=${ownerAttributeValue}`
-                
-            }
-            if (ownerAttribute == "email" || ownerAttribute == "fname" || ownerAttribute == "lname") {
-                url = `${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
+            
+            
+            
+            
+            if (ownerAttribute=="id" || ownerAttribute == "email" || ownerAttribute == "fname" || ownerAttribute == "lname") {
+                //url = `${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
+                url=`${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
             }
             if (ownerAttribute == "phone") {
+                // '+' sign in url querystring has to be encoded like %2B
                 url = `${urlLocal}/clinic/owner/?phone=%2B` + ownerAttributeValue.slice(1)
             }
             
 
             console.log(url)
+            
             const response = await axios(url, {
                 method: "GET",
                 mode: "cors",
