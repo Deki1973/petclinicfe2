@@ -19,6 +19,7 @@ const AddNewPet = () => {
     const [newPetData, setNewPetData] = useState()
     const [message, setMessage] = useState()
     const [givenPetId, setGivenPetId]=useState()
+     const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -26,14 +27,13 @@ const AddNewPet = () => {
 
         const submitterId = e.nativeEvent.submitter.id
 
-        if (submitterId == 'btnCancel') {
+        if (submitterId == 'btnBack') {
             window.alert("todo: go to pet page")
+            navigate("/pet")
         }
         if (submitterId == 'btnSave') {
             window.alert('save new pet')
-        }
-
-        const newPet = {
+            const newPet = {
             "id": petId,
             "pet_name": petName,
             "breed": breed,
@@ -59,6 +59,11 @@ const AddNewPet = () => {
             console.log(error)
             setMessage(`Oops! Somethin' went wrong: ${error}`)
         })
+
+
+        }
+
+        
 
     }
 
@@ -124,7 +129,7 @@ const AddNewPet = () => {
                 </table>
                 <div className="form-buttons">
                     <button type="submit" id="btnSave">Save</button>
-                    <button type="submit" id="btnCancel">Back</button>
+                    <button type="submit" id="btnBack">Back</button>
                 </div>
 
 
