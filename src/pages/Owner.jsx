@@ -75,12 +75,12 @@ const Owner = () => {
             var url = "";
 
             //url=`${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
-            //window.log(url)
+            
             
             if (ownerAttribute === "id") {
-                window.alert(ownerAttributeValue)       
+                
                 url = `${urlLocal}/clinic/owner/?id=${ownerAttributeValue}`
-                //url = `${urlLocal}/clinic/owner/2`
+                
             }
             if (ownerAttribute == "email" || ownerAttribute == "fname" || ownerAttribute == "lname") {
                 url = `${urlLocal}/clinic/owner/?${ownerAttribute}=${ownerAttributeValue}`
@@ -89,9 +89,6 @@ const Owner = () => {
                 url = `${urlLocal}/clinic/owner/?phone=%2B` + ownerAttributeValue.slice(1)
             }
             
-
-            //const url=`${urlDeploy}/clinic/owner?phone=+123456789991`
-            //const url=`${urlDeploy}/clinic/owner?email=konidek37@gmail.com`
 
             console.log(url)
             const response = await axios(url, {

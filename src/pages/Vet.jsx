@@ -67,7 +67,7 @@ const Vet = () => {
 
             console.log(vetAttribute)
             console.log(vetAttributeValue)
-            const url = `${urlLocal}/clinic/vet?${vetAttribute}=${vetAttributeValue}`
+            const url = `${urlLocal}/clinic/vet/?${vetAttribute}=${vetAttributeValue}`
             //const url = `${urlLocal}/clinic/vet?$id='1'`
 
             console.log(url)

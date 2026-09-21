@@ -76,7 +76,7 @@ const Pet = () => {
         
       
       
-        let url=`${urlLocal}/clinic/pet/search?${petAttribute}=${petAttributeValue}`
+        let url=`${urlLocal}/clinic/pet/search/?${petAttribute}=${petAttributeValue}`
         
         console.log(url)
         const response=await axios(url,{

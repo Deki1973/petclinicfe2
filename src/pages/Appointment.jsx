@@ -68,7 +68,8 @@ const Appointment = () => {
             const appointmentAttribute2 = document.getElementById("select2").value
             const inputAppointmentAttribValue2 = document.getElementById("inputAppointmentAttribValue2").value
 
-            let url = `${urlDeploy}/clinic/appt?${appointmentAttribute}=${inputAppointmentAttribValue}`
+            //let url = `${urlDeploy}/clinic/appt?${appointmentAttribute}=${inputAppointmentAttribValue}`
+            let url = `${urlLocal}/clinic/appt/?${appointmentAttribute}=${inputAppointmentAttribValue}`
             if (appointmentAttribute2 != "none") {
                 url += `&${appointmentAttribute2}=${inputAppointmentAttribValue2}`
             }
