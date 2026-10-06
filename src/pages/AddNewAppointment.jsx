@@ -98,10 +98,18 @@ const AddNewAppointment = () => {
             console.log(response)
             if (response.status==201){
                 window.alert("Appointment scheduled.")
+            }else{
+
+                window.alert(response.data)
             }
+
         }).catch((error)=>{
             console.log(error)
-            window.alert(error)
+            if (error.response.status=='409'){
+                window.alert("This appointment time is unavailable. Please try another date or time.")
+            }else{
+                window.alert(error)
+            }
         })
     }
 
@@ -320,11 +328,15 @@ const AddNewAppointment = () => {
                             <tr key={item.id}>
                                 <td className="td-table-owners-pets-index" onClick={e => { 
                                     console.log(e.nativeEvent.target.innerText)
+                                    window.alert("Selected pet: "+e.nativeEvent.target.innerText)
                                     setSelectedPetId(e.nativeEvent.target.innerText)
                                      }}>{item.id}</td>
                                 <td>{item.pet_name}</td>
                                 <td>{item.breed}</td>
-                                <td onClick={e => { console.log(e.nativeEvent.target.innerText) }}>{item.chip_no}</td>
+                                <td onClick={e => { 
+                                    console.log(e.nativeEvent.target.innerText) 
+                                    window.alert(e.nativeEvent.target.innerText)
+                                }}>{item.chip_no}</td>
 
                             </tr>
                         )
